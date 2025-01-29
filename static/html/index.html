@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header_container">
+      <!-- header_cont добавил чтобы высота оставалась такой же для header_container -->
+      <div class="header_cont">
+        <!-- верхняя часть шапки-->
+        <div class="header__inner-high">
+          <ul class="header_item_list">
+            <li class="header_list_item-logo">LiveCRM</li>
+            <li class="header_list_item">Создание сайтов</li>
+            <li class="header_list_item">Выбрать сайт</li>
+            <li class="header_list_item">Продвижение</li>
+            <li class="header_list_item">Реклама</li>
+            <li class="header_list_item">Блог</li>
+            <li class="header_list_item">Сервисы</li>
+          </ul>
+          <div class="entry_container">
+            <div class="entry_button">Вход</div>
+            <img
+              src="../images/index/download 1.png"
+              alt="person"
+              class="entry_header-person"
+            />
+            <div class="number_container">+7(499) 499-49-49</div>
+          </div>
+          <!-- кнопка для появления меню -->
+          <div class="menu_button_container">
+            <button class="right_menu_button" onclick="toggleMenu()">
+              <div class="icon_menu"></div>
+            </button>
+          </div>
+          <!-- //// -->
+          <!-- меню справа на мобилах, появляется по нажатию кнопки  -->
+          <div class="menu_container">
+            <nav class="menu">
+              <button class="hide_menu" onclick="toggleMenu()"></button>
+              <!-- вход и номер телефона -->
+              <div class="in_menu_entry_container">
+                <div>+7(499) 499-49-49</div>
+                <img
+                  src="../images/index/download 1.png"
+                  class="entry_pic_menu"
+                  alt="person"
+                />
+              </div>
+              <!-- //// -->
+              <ul>
+                <li><a href="#">Создание сайтов</a></li>
+                <li><a href="#">Выбрать сайт</a></li>
+                <li><a href="#">Продвижение</a></li>
+                <li><a href="#">Реклама</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Сервисы</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- //// -->
+        </div>
+        <!-- //// -->
+        <div class="header_separate_line"></div>
+      </div>
+      <!-- //// -->
+    </header>
+    <div class="header_down">
+      <div class="header_down_s">
+        <div class="service_container">
+          <div class="service_item">Сервис1</div>
+          <div class="service_item">Сервис2</div>
+          <div class="service_item">Сервис3</div>
+          <div class="service_item">Сервис4</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main_page">
+      <div class="first_page">
+        <div class="first_page_title">
+          LiveCRM <br />
+          CRM-система для бизнеса, <br />
+          призванная упорядочить все <br />
+          элементы организации в одном окне.
+        </div>
+        <div class="first_page_button_container">
+          <a href="#">
+            <button class="first_page_button">Попробовать бесплатно</button>
+          </a>
+        </div>
+      </div>
+      <div class="second_page">
+        <div class="second_page_title">Преимущества LiveCRM</div>
+        <!-- слайдер, видно на меньших экранах -->
+        <div class="swiper-container" id="first_swiper">
+          <div class="swiper-wrapper">
+            <!-- слайды, swiper-slide - контейнер, сам слайд - swiper-slide_main --->
+            <div class="swiper-slide">
+              <div class="swiper-slide_main">Slide1</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide_main">Slide2</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide_main">Slide3</div>
+            </div>
+            <!-- //// -->
+          </div>
+          <div class="swiper-pagination"></div>
+          <!-- //// -->
+        </div>
+
+        <ul class="benefits_container">
+          <li class="benefit_item_container">
+            <img
+              src="../images/index/Без имени-1 1.png"
+              alt="count"
+              class="benefit_item_icon"
+            />
+            <div class="benefit_item_text">
+              Отслеживание эффективности работы сотрудников
+            </div>
+          </li>
+          <li class="benefit_item_container">
+            <img
+              src="../images/index/Без имени-1 1.png"
+              alt="count"
+              class="benefit_item_icon"
+            />
+            <div class="benefit_item_text">
+              Отслеживание эффективности работы сотрудников
+            </div>
+          </li>
+          <li class="benefit_item_container">
+            <img
+              src="../images/index/Без имени-1 1.png"
+              alt="count"
+              class="benefit_item_icon"
+            />
+            <div class="benefit_item_text">
+              Отслеживание эффективности работы сотрудников
+            </div>
+          </li>
+          <li class="benefit_item_container">
+            <img
+              src="../images/index/Без имени-1 1.png"
+              alt="count"
+              class="benefit_item_icon"
+            />
+            <div class="benefit_item_text">
+              Отслеживание эффективности работы сотрудников
+            </div>
+          </li>
+          <li class="benefit_item_container">
+            <img
+              src="../images/index/Без имени-1 1.png"
+              alt="count"
+              class="benefit_item_icon"
+            />
+            <div class="benefit_item_text">
+              Отслеживание эффективности работы сотрудников
+            </div>
+          </li>
+          <li class="benefit_item_container">
+            <img
+              src="../images/index/Без имени-1 1.png"
+              alt="count"
+              class="benefit_item_icon"
+            />
+            <div class="benefit_item_text">
+              Отслеживание эффективности работы сотрудников
+            </div>
+          </li>
+          <li class="benefit_item_container">
+            <img
+              src="../images/index/Без имени-1 1.png"
+              alt="count"
+              class="benefit_item_icon"
+            />
+            <div class="benefit_item_text">
+              Отслеживание эффективности работы сотрудников
+            </div>
+          </li>
+          <li class="benefit_item_container">
+            <img
+              src="../images/index/Без имени-1 1.png"
+              alt="count"
+              class="benefit_item_icon"
+            />
+            <div class="benefit_item_text">
+              Отслеживание эффективности работы сотрудников
+            </div>
+          </li>
+        </ul>
+
+        <div class="form_button_container">
+          <div class="form_button_title">
+            Отраслевые решения — настроим LiveCRM под ваш бизнес
+          </div>
+          <div class="form_button_text">
+            Заполните анкету и мы свяжемся с Вами
+          </div>
+
+          <a href="#" x>
+            <button class="form_button_button">Заполнить анкету</button>
+          </a>
+        </div>
+        <div class="calculator_price_container">
+          <div class="calculator_price_title">
+            <p class="cp-title-1">Калькулятор стоимости</p>
+            <p class="cp-title-2">
+              Никаких «пакетов» - плати только за то, что тебе нужно!
+            </p>
+          </div>
+          <div class="cp__inner-container">
+            <div class="cp_license-container-1">
+              <p class="cp_license-title">
+                Лицензия
+              </p>
+              <div class="license_list_separate_line"></div>
+              <div class="license_list_item">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+              <div class="license_list_separate_line"></div>
+              <div class="license_list_item">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+              <div class="license_list_separate_line"></div>
+              <div class="license_list_item">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+              <div class="license_list_separate_line"></div>
+              <div class="license_list_item">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+              <div class="license_list_separate_line"></div>
+              <div class="license_list_item">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+              <div class="license_list_separate_line"></div>
+              <div class="license_list_item">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+              <div class="license_list_separate_line"></div>
+              <div class="license_list_item">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+              <div class="license_list_separate_line"></div>
+              <div class="license_list_item">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+              <div class="license_list_separate_line"></div>
+              <div class="license_list_item">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+            </div>
+            <div class="cp_manager-container">
+              <p class="cp-manager-title-1">Стоимость лицензии (за период):</p>
+              <p class="cp-manager-license-cost">999p</p>
+              <p class="cp-manager-title-2">Стоимость внедрения:</p>
+              <p class="cp-manager-integration-cost">999p</p>
+              <a href="#"
+                ><button class="cp-manager-connect">
+                  Связаться с менеджером
+                </button></a
+              >
+              <a href="#" class="cp-manager-about-license"
+                >Подробнее о Лицензии</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="instruments_header">8 инструментов развития продаж</div>
+        <div class="instruments_divider"></div>
+        <div class="swiper-container" id="second_swiper">
+          <div class="swiper-wrapper">
+            <!-- слайды, swiper-slide - контейнер, сам слайд - swiper-slide_main --->
+            <div class="swiper-slide">
+              <div class="swiper-slide_main">Slide1</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide_main">Slide2</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide_main">Slide3</div>
+            </div>
+            <!-- //// -->
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev">
+            <img src="../images/index/leftButton.png" class="swiper_button_pic_left" />
+          </div>
+          <div class="swiper-button-next">
+            <img src="../images/index/leftButton.png" class="swiper_button_pic" />
+          </div>
+          <!-- //// -->
+        </div>
+
+        <div class="triangle_page"></div>
+      </div>
+      <div class="third_page">
+        <div class="form_request_container">
+          <div class="form_request_title">
+            Попробовать весь функционал
+            <span style="color: red">бесплатно</span>
+          </div>
+          <div class="form_request_undertitle">Тестовый тариф на 14 дней</div>
+          <form action="#">
+            <input type="text" placeholder="Ваше имя" required />
+            <input type="text" placeholder="Телефон" required />
+            <input type="email" placeholder="E-mail" required />
+            <input
+              id="form_request_send_data"
+              type="submit"
+              value="Отправить"
+            />
+          </form>
+          <div class="form_request_description">
+            Оставляя заявку вы соглашаетесь с политикой обработки персональных
+            данных
+          </div>
+        </div>
+
+        <div class="review_container">
+          LiveCRM — главный помощник в продажах для бизнеса
+        </div>
+        <div class="review_divider"></div>
+        <div class="swiper-container" id="second_swiper">
+          <div class="swiper-wrapper">
+            <!-- слайды, swiper-slide - контейнер, сам слайд - swiper-slide_main --->
+            <div class="swiper-slide">
+              <div class="swiper-slide_main">Slide1</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide_main">Slide2</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide_main">Slide3</div>
+            </div>
+            <!-- //// -->
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev">
+            <img src="../images/index/leftButton.png" class="swiper_button_pic_left" />
+          </div>
+          <div class="swiper-button-next">
+            <img src="../images/index/leftButton.png" class="swiper_button_pic" />
+          </div>
+          <!-- //// -->
+        </div>
+      </div>
+    </div>
+    <footer class="footer_container">
+      <div class="footer__info">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud
+      </div>
+      <div class="footer__info_separate_line"></div>
+      <div class="footer__info">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud
+      </div>
+      <div class="footer__info_separate_line"></div>
+      <div class="footer__info">
+        Lorem ipsum dolor sit amet, consectetur adipiscis nostrud
+      </div>
+      <div
+        class="footer__info_separate_line"
+        ng
+        elit,
+        sed
+        do
+        eiusmod
+        tempor
+        incididunt
+        ut
+        labore
+        et
+        dolore
+        magna
+        aliqua.
+        Ut
+        enim
+        ad
+        minim
+        veniam,
+        qui
+      ></div>
+      <div class="footer__info">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud
+      </div>
+      <div class="footer__info_low_res">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud
+      </div>
+    </footer>
+    <!-- скрипты -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/index/toggleMenu.js"></script>
+
+    <script src="../js/index/swiper_script.js"></script>
+
+    <!-- //// -->
+  </body>
+</html>

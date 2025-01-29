@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/css/login/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>LiveCRM</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">LiveCRM</div>
+    </header>
+    <form action="#" class="registration_form_container">
+      <div class="input_form_container">
+        <label for="name" class="name_label">Почта или номер телефона</label>
+        <input type="text" class="input_form" id="name" required />
+      </div>
+      <div class="input_form_container">
+        <label for="name" class="name_label">Пароль</label>
+        <input type="password" class="input_form" id="email" required />
+      </div>
+      <div class="container_p">
+        <div class = "remember_me">
+          <input type="checkbox"><p>Запомнить меня</p></input>
+        </div>
+        <p class="already_have_an_account"><a href="#" class = "already_have_an_account_text">Забыли пароль?</a></p>
+      </div>
+      <input
+        type="submit"
+        value="Войти"
+        class="input_form_submit"
+        id="submit"
+      />
+    </form>
+  </body>
+</html>

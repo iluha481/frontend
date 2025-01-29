@@ -1,0 +1,878 @@
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #D9D9D9;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+}
+
+.header_cont {
+  height: auto ;
+}
+
+.header_container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+
+  position: relative;
+  height: auto;
+}
+
+.header__inner-high {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  height: 86px;
+  background-color: black;
+}
+
+.header_item_list {
+  display: flex;
+  flex-shrink: 1;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: white;
+}
+
+.header_list_item-logo {
+  font-style: italic;
+  padding-right: 26px;
+  font-size: 32px;
+}
+
+.header_list_item {
+  padding-right: 26px;
+}
+
+.entry_container {
+  display: flex;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+}
+
+.entry_header-person {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+.menu_button_container {
+  display: none;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+button.right_menu_button {
+  margin-right: 11%;
+  display: none;
+  height: 86px;
+  width: 86px;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.icon_menu {
+  height: 86px;
+  width: 86px;
+  background-image: url('../../images/index/menu-icon-PNG-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#inMenuButton {
+  margin-left: 17px;
+}
+
+.menu_container {
+  height: 100px;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu {
+  height: 101vh;
+  width: 0;
+  background-color: black;
+  display: flex;
+  flex-shrink: 1;
+  align-items: center;
+  justify-content:center;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  font-size: 20px;
+  color: white;
+  width: 0;
+  overflow-x: hidden;
+  transition: width 0.5s ease-in-out;
+  flex-direction: column
+}
+.in_menu_entry_container{
+  position: absolute;
+  top: 30px;
+}
+.entry_pic_menu{
+  margin-top: 10px;
+}
+.menu.show {
+  width: 70%; 
+}
+.hide_menu{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  position: fixed;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;  
+  display: none;
+  z-index: 10;
+}
+
+.hide_menu.show{
+  display: block;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 11;
+}
+
+.menu ul li {
+  border-bottom: 1px solid #444;
+}
+
+.menu ul li:last-child {
+  border-bottom: none;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header_separate_line {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+.header_down {
+  position: sticky;
+  top: 0; 
+  z-index: 1000;
+}
+.header_down_s{
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  z-index: 1000;
+  height: 86px;
+  width: 100%;
+  background-color: black;
+}
+.service_container {
+  margin-left: 11%;
+  display: flex;
+  flex-direction: row;
+}
+
+.service_item {
+  padding-right: 36px;
+  font-size: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+}
+
+.main_page {
+  display: flex;
+  flex-direction: column;
+  
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+}
+
+.first_page {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(287.3deg, rgba(194, 129, 255, 40%) 2.34%, #FFFFFF 88.13%);
+
+}
+
+.first_page_title {
+  padding-left: min(10%, 230px);
+  padding-top: 75px;
+  display: flex;
+  text-align: start;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+
+  color: #7252aa;
+}
+
+.first_page_button_container {
+  display: flex;
+  padding-left: min(10%, 230px);
+  padding-top: 169px;
+}
+
+.first_page_button > a {
+  display: flex;
+  text-decoration: none;
+}
+.first_page_button {
+  border-radius: 29px;
+  border-style: none;
+  min-height: 88px;
+  min-width: 394px;
+  background-color: #3b2e57;
+  color: white;
+  font-size: 24px;
+}
+
+.second_page {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto !important;
+  background: linear-gradient(149.4deg, #FFFFFF -13.65%, rgba(254, 253, 255, 0.983636) 28.86%, rgba(194, 129, 255, 40%) 100.25%);
+
+}
+
+.second_page_title {
+  font-size: 64px;
+}
+
+.benefits_container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width:70%;
+}
+
+.benefit_item_container {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../images/index/Rectangle\ 109.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 240px;
+  width: 240px;
+  margin-bottom: 80px;
+  margin-right: 40px;
+}
+
+.benefit_item_icon {
+  padding-top: 16px;
+  padding-left: 16px;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.benefit_item_text {
+  height: 80%;
+  width: 80%;
+  font-size: 30px;
+  align-self: center;
+  /* Отслеживание эффективности работы сотрудников */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #000000;
+}
+
+.instruments_header{
+  font-size: 64px;
+  margin-top: 150px;
+}
+.instruments_divider{
+  margin-top: 50px;
+}
+
+
+#second_swiper{
+  display: flex;
+}
+#first_swiper{
+  display: none;
+}
+
+#second_swiper .swiper-wrapper .swiper-slide .swiper-slide_main{
+  margin-left: 137px;
+  margin-right: 137px;
+  height: 350px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+.swiper-button-prev img{
+  margin-left: 50px;
+  margin-bottom: 70px;
+}
+.swiper-button-next img {
+  margin-right: 50px;
+  margin-bottom: 70px;
+  transform: rotate(180deg);
+}
+
+.swiper-container {
+  width: 90%;
+  height: 500px; 
+  overflow-x: hidden; 
+
+  position: relative;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  height: auto;
+}
+.swiper-slide_main{
+  border: 3px solid #C281FF;
+  margin:20px;
+  background: #fff;
+  border-radius: 30px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  height: 400px; 
+  
+}
+
+.swiper-pagination{
+  position: absolute; /* Add this */
+  bottom: 0; /* Add this */
+  left: 50%; /* Add this */
+  transform: translateX(-50%); /* Add this */
+  z-index: 100;
+}
+
+
+
+.third_page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.form_request_container{
+  margin-top:300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 20px;
+  width: auto;
+  height: auto;
+}
+
+.form_request_title{
+  font-size: 64px;
+}
+
+.form_request_undertitle{
+  margin-top:30px;
+  font-size: 24px;
+  opacity: 50%;
+}
+
+.form_request_container form{
+  margin-top: 70px;
+  justify-content: space-between;
+  display: flex;
+
+}
+#form_request_send_data{
+  padding: 0 0 0 0;
+  background-color: #3B2E57;
+  color: white;
+  font-size: 24px;
+  cursor:pointer;
+  width: 300px;
+}
+.form_request_container form input{
+  border: 1px solid black;
+  border-radius: 25px;
+  padding-left:20px;
+  font-size: 15px;
+  width: 280px;
+  height: 60px;
+  
+}
+.form_request_description{
+  margin-top: 50px;
+  opacity: 50%;
+  font-size: 14px;
+}
+
+.review_container{
+  display: flex;
+  font-size: 48px;
+  margin-top: 100px;
+}
+
+.review_divider{
+  margin-top: 50px;
+}
+
+.form_button_container{
+  max-width: min(1250px, 90%);
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+ 
+}
+
+.form_button_title{
+  margin-top: 50px;
+  font-size: 64px;
+
+}
+.form_button_text{
+  margin-top: 50px;
+  text-align: left;
+  font-size: 40px;
+}
+.form_button_button{
+  margin-top: 50px;
+  border-radius: 29px;
+  border-style: none;
+  min-height: 88px;
+  min-width: 394px;
+  background-color: #3B2E57;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.calculator_price_container {
+  display: flex;
+  flex-direction:column;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.cp-title-1 {
+  font-size: 56px;
+  margin-top: 170px;
+}
+.cp-title-2 {
+  font-size: 20px;
+}
+
+.cp__inner-container {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: row;
+  width: 80%;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.cp_license-container-1{
+  display: flex;
+  flex-direction: column;
+  width: 735px;
+  height: 683px;
+  border: 2px black solid;
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 20px;
+  padding: 40px 30px;
+  align-items: flex-start;
+}
+
+.cp_license-title{
+  font-size: 36px;
+}
+
+.license_list_separate_line {
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+}
+
+.license_list_item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cp_manager-container{
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  height: 480px;
+  border: 2px black solid;
+  border-radius: 20px;
+  background-color: white;
+  justify-content: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.cp-manager-title-1 {
+  margin-top: 20px;
+  opacity: 0.5;
+}
+.cp-manager-title-2 {
+  margin-top: 5px;
+  opacity: 0.5;
+}
+
+.cp-manager-license-cost {
+  margin-top: 3px;
+  font-size: 36px;
+}
+
+.cp-manager-integration-cost {
+  font-size: 36px;
+  margin-top: 5px;
+}
+
+.cp-manager-connect {
+  width: 297px;
+  height: 66px;
+  color: white;
+  font-size: 20px;
+  background: #3B2E57;
+  border-radius: 29px;
+  border-style: none;
+}
+
+.cp-manager-about-license {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.triangle_page{
+  position: absolute;
+  bottom:0;
+  
+  width: 100vw;
+  height: 552px;
+  background-image:url('../../images/index/Rectangle139.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.third_page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  background: linear-gradient(138.18deg, #FFFFFF 73.14%, #C281FF 201.52%);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer_container {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 470px;
+  background-color: #E3E3E3;
+}
+
+.footer__info {
+  height: 220px;
+  width:230px;
+}
+
+.footer__info_low_res {
+  display: none;
+}
+
+.footer__info_separate_line {
+  opacity: 1;
+  height: 350px;
+  width: 1px;
+  background-color: #000000;
+}
+
+
+
+@media (max-width: 1620px) {
+  .benefits_container{
+    display: none;
+  }
+  #first_swiper{
+    display: flex;
+  }
+  #second_swiper .swiper-wrapper .swiper-slide .swiper-slide_main{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 400px;
+  }
+  .swiper-button-next img,
+  .swiper-button-prev img {
+    display:none;
+    
+  }
+  .cp_license-container-1{
+    width: 50%;
+
+  }
+}
+
+
+
+@media (max-width: 1300px) {
+  .form_request_title{
+    font-size: 44px;
+  }
+  .form_request_undertitle{
+    font-size: 20px;
+  }
+  .form_request_container form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form_request_container form input{
+    width: 500px;
+    margin-top: 20px;
+  }
+  #form_request_send_data{
+    width: 520px;
+  }
+
+
+  .header_list_item {
+    display: none;
+  }
+  .first_page_title {
+    font-size: 44px;
+    line-height: 60px;
+  }
+  .header__inner-high {
+    justify-content: flex-start;
+    margin-left: 11%;
+  }
+  .review_container {
+    font-size: 44px;
+  }
+  .instruments_header{
+    font-size: 44px;
+  }
+  
+  .form_button_title{
+    font-size: 44px;
+  }
+  .form_button_text{
+    font-size: 32px;
+  }
+  .form_button_container{
+    align-items: center;
+  }
+  .form_button_text{
+    text-align: center;
+  }
+
+  .cp__inner-container{
+    justify-content: center;
+    width: 100%;
+  }
+  .cp_license-container-1{
+    width:80%;
+  }
+}
+
+@media (max-width: 525px) {
+.form_button_button{
+  border-radius: 29px;
+    border-style: none;
+    min-height: 88px;
+    min-width: 90vw;
+    background-color: #3b2e57;
+    color: white;
+    font-size: 20px;
+}
+  .form_button_text{
+    font-size: 24px;
+  }
+  .form_button_title{
+    font-size: 36px;
+  }
+  .instruments_header{
+    font-size: 36px;
+  }
+  .review_container {
+    font-size: 36px;
+  }
+  .form_request_title{
+    font-size: 36px;
+  }
+  .form_request_undertitle{
+    font-size: 18px;
+  }
+  .form_request_container form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form_request_container form input{
+    width: 280px;
+    margin-top: 20px;
+  }
+  #form_request_send_data{
+    width: 300px;
+  }
+
+
+  .menu_button_container {
+    display: flex;
+  }
+  .header_down{
+    display: none;
+  }
+  .header_cont {
+    height: 86px;
+  }
+  .header_separate_line {
+    display: none;
+  }
+  button.right_menu_button {
+    display: flex;
+  }
+  .entry_header-person {
+    display: none;
+  }
+  .number_container {
+    display: none;
+  }
+  .entry_button {
+    font-size: 30px;
+    display: none;
+  }
+  .first_page_title {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .service_container {
+    flex-wrap: wrap;
+  }
+  .first_page_button_container {
+    display: flex;
+    padding-left: 5vw;
+    padding-top: 20vw;
+  }
+  .first_page_button {
+    border-radius: 29px;
+    border-style: none;
+    min-height: 88px;
+    min-width: 90vw;
+    background-color: #3b2e57;
+    color: white;
+    font-size: 19px;
+  }
+  .second_page {
+    position: relative;
+    display: flex;
+  }
+
+  .second_page_title {
+    font-size: 40px;
+  }
+  
+  .footer__info{
+    display: none;
+  }
+
+  .footer__info_separate_line{
+    display: none;
+  }
+
+  .footer__info_low_res {
+    display: flex;
+    height: auto;
+    width: auto;
+    color: #000000;
+  }
+  .swiper-slide {
+    font-size: 16px; 
+}
+.cp-manager-connect{
+  width: 100%;
+}
+.cp_license-container-1{
+  height: fit-content;
+}
+.cp_license-title {
+  align-self: center;
+}
+.cp-title-1 {
+  font-size: 40px;
+}
+}

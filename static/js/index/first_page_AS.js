@@ -1,0 +1,1 @@
+const benefits = document.querySelectorAll('.benefit_item_container')

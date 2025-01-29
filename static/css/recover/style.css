@@ -1,0 +1,103 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-image: url("../../images/recover/Rectangle\ 61.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: max(50%, 64px);
+  color: #000000;
+}
+
+.header__inner {
+  padding-top: 85px;
+}
+
+.header__inner-p {
+  font-size: 32px;
+}
+
+.registration_form_container {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+}
+
+.input_form_container {
+    padding-bottom: 49px;
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  width: min(100%, 440px);
+}
+
+.name_label {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 18px;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.input_form {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 30px;
+  min-height: 60px;
+  width: min(100%, 440px);
+  border-radius: 29px;
+  border: black 1px solid;
+  font-size: 30px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+.input_form_submit {
+  display: flex;
+  font-size: min(6vw,24px);
+  color: white;
+  background-color: #3b2e57;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  width: min(100%, 440px);
+  border-radius: 29px;
+  border: black 1px solid;
+}
+
+.back {
+  text-decoration: none;
+  text-align: left;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #0052cc;
+}
+
+.container_p {
+  display: flex;
+  flex-direction: column;
+}
+.back_text{
+  text-decoration: none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/css/registration/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>LiveCRM</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">LiveCRM</div>
+    </header>
+    <form action="#" class="registration_form_container">
+      <div class="input_form_container">
+        <label for="name" class="name_label">Имя</label>
+        <input type="text" class="input_form" id="name" required />
+      </div>
+      <div class="input_form_container">
+        <label for="name" class="name_label">Адрес электронной почты</label>
+        <input type="email" class="input_form" id="email" required />
+      </div>
+      <div class="input_form_container">
+        <label for="name" class="name_label">Номер телефона</label>
+        <input type="tel" class="input_form" id="phone" required/>
+      </div>
+      <div class="input_form_container">
+        <label for="name" class="name_label">Ссылка на ваш магазин</label>
+        <input type="url" class="input_form" id="link" required/>
+      </div>
+      <p class="already_have_an_account"> Уже есть аккаунт? <a href="#" class = "already_have_an_account_text">Вход</a></p>
+      <input
+        type="submit"
+        value="Зарегистрироваться"
+        class="input_form_submit"
+        id="submit"
+      />
+      <p class="license_agreement">
+        Нажимая кнопку, вы принимаете условия пользовательского<br />
+        соглашения, лицензионного договора и даёте согласие на обработку<br />
+        персональных данных
+      </p>
+    </form>
+  </body>
+</html>
